@@ -1,0 +1,135 @@
+.insd{
+    /* height: 65vh; */
+    display: grid;
+    place-items: center;
+    margin-top: 80px;
+}
+
+.insd h1{
+    font-size: 2.5em;
+}
+
+
+
+.container {
+    display: flex;
+    max-width: 900px;
+    background-color: var(--wht);
+    box-shadow: 0px 4px 8px var(--shadow);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+}
+
+#me{
+    color: var(--text);
+}
+
+.contact-info {
+    background-color:var(--text);
+    color: var(--nwht);
+    padding: 40px;
+    flex: 1;
+}
+
+.contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.contact-info ul {
+    list-style: none;
+}
+
+.contact-info li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-info .icon {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.contact-form {
+    flex: 1.5;
+    padding: 40px;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--three2);
+}
+
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input-box {
+    flex: 1;
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.input-box label {
+    font-size: 12px;
+    color: var(--three2);
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.input-box input,
+.input-box textarea {
+    padding: 10px;
+    /* border: 1px solid var(--dwht); */
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: var(--wht);
+}
+
+.input-box textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+#cnt-bt{
+    background-color: var(--text);
+    color: var(--wht);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--grad2);
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .contact-info,
+    .contact-form {
+        padding: 20px;
+    }
+
+    .insd{
+        margin-top: 50px;
+        height: 65vh;
+        place-items: center;
+        padding: 20px;
+    }
+}
